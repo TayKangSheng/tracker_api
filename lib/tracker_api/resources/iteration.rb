@@ -24,6 +24,14 @@ module TrackerApi
       def stories=(data)
         super.each { |s| s.client = client }
       end
+
+      # Provides a list of all the cycle_time_details of each story in the iteration.
+      #
+      # @return [Array[CycleTimeDetails]] array of cycle_time_details of iterations in this project
+      def cycle_time_details
+        Endpoints::IterationAnalyticsCycleTimeDetails.new(client).get(id, number)
+      end
+
     end
   end
 end
