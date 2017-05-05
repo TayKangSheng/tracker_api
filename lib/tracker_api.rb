@@ -55,7 +55,7 @@ module TrackerApi
     autoload :Webhook, 'tracker_api/endpoints/webhook'
     autoload :Webhooks, 'tracker_api/endpoints/webhooks'
     autoload :StoryTransitions, 'tracker_api/endpoints/story_transitions'
-    autoload :IterationAnalyticsCycleTimeDetails, 'tracker_api/endpoints/iteration_analytics_cycle_time_details'
+    autoload :Iteration, 'tracker_api/endpoints/iteration'
   end
 
   module Resources
