@@ -29,7 +29,7 @@ module TrackerApi
       #
       # @return [Array[CycleTimeDetails]] array of cycle_time_details of iterations in this project
       def cycle_time_details
-        Endpoints::IterationAnalyticsCycleTimeDetails.new(client).get(id, number)
+        Endpoints::IterationAnalyticsCycleTimeDetails.new(client).get(project_id, number)
       end
 
     end
