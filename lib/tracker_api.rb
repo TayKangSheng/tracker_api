@@ -87,5 +87,6 @@ module TrackerApi
     autoload :Webhook, 'tracker_api/resources/webhook'
     autoload :StoryTransition, 'tracker_api/resources/story_transition'
     autoload :CycleTimeDetails, 'tracker_api/resources/cycle_time_details'
+    autoload :DailyHistoryContainer, 'tracker_api/resources/daily_history_container'
   end
 end
